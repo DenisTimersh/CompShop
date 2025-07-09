@@ -1,81 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechnoShop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap' rel='stylesheet'/>
 </head>
 <body>
-    <header>
+
+  <!-- Шапка -->
+  <header>
     <div class="Logo">TechnoShop</div>
 
-    <!-- Бургер-кнопка -->
-    <button class="burger" id="burger">
-        ☰
-    </button>
+    <!-- Бургер кнопка -->
+    <button class="burger" id="burger">☰</button>
 
+    <!-- Навигация -->
     <nav id="nav">
-        <a href="#">Главная</a>
-        <a href="#">О нас</a>
-        <a href="#">Товары</a>
-        <a href="#">Контакты</a>
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Товары</a>
+      <a href="#">Контакты</a>
     </nav>
-</header>
-    <main>
-        <section class="TS">
-            <div class="text-info">
-                <h1>Твой идеальный компьютер — старт твоих возможностей!</h1>
-                <p>Мощь, производительность и надёжность в каждом байте. Выбери свой ПК — для игр, работы или творчества.</p>
-                <div class="button">Купить</div>
-            </div>
-                <img src="img/image.png.png" alt="">       
-        </section>
-        <section class="products">
-            <h1>Товары</h1>
-            <div class="container">
-            <div class="product-card">
-                <img src="img/Товар 3.png" alt="">
-                <p>49999 Р</p>
-                <div class="productB">Купить</div>
-            </div>
-            <div class="product-card">
-                <img src="img/Товар 2.png" alt="">
-                <p>69999 Р</p>
-                <div class="productB">Купить</div>
-            </div>
-            <div class="product-card">
-                <img src="img/Товар 1.png" alt="">
-                <p>99999 Р</p>
-                <div class="productB">Купить</div>
-            </div>
-            </div>
-</section>
-<section class="contacts">
-    <h1>Контакты</h1>
-    <div class="adress">
+  </header>
+
+  <!-- Основная секция -->
+  <main>
+    <section class="TS">
+      <div class="text-info">
+        <h1>Твой идеальный компьютер — старт твоих возможностей!</h1>
+        <p>Мощь, производительность и надёжность в каждом байте. Выбери свой ПК — для игр, работы или творчества.</p>
+        <div class="button">Купить</div>
+      </div>
+      <img src="img/image.png.png" alt="PC Image" />
+    </section>
+
+    <!-- Товары -->
+    <section class="products">
+      <h1>Товары</h1>
+      <div class="container">
+        <div class="product-card">
+          <img src="img/Товар 3.png" alt="Товар 3">
+          <p>49999 Р</p>
+          <div class="productB">Купить</div>
+        </div>
+        <div class="product-card">
+          <img src="img/Товар 2.png" alt="Товар 2">
+          <p>69999 Р</p>
+          <div class="productB">Купить</div>
+        </div>
+        <div class="product-card">
+          <img src="img/Товар 1.png" alt="Товар 1">
+          <p>99999 Р</p>
+          <div class="productB">Купить</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts">
+      <h1>Контакты</h1>
+      <div class="adress">
         <h2>Адрес:</h2>
         <p>Г. Москва ул. Пушкина корпус 2</p>
-    </div>
-    <div class="MT">
+      </div>
+      <div class="MT">
         <h2>Почта:</h2>
         <p>Compshop@gmail.com</p>
         <h2>Телефон:</h2>
-        <p>+7951327234</p>
-    </div>
-</section>
-    </main>
-    <footer class="footer">
-            <p>@2025</p>
-    </footer>
-    <script>
+        <p>+7 951 327-23-40</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <p>@2025 TechnoShop</p>
+  </footer>
+
+  <!-- Скрипт для бургера -->
+  <script>
     const burger = document.getElementById('burger');
     const nav = document.getElementById('nav');
 
     burger.addEventListener('click', () => {
-        nav.classList.toggle('active');
+      nav.classList.toggle('active');
     });
-</script>
+  </script>
+
 </body>
 </html>
